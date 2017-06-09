@@ -1,1 +1,53 @@
+#!/bin/bash
+
+sudo apt install finger #installs Finger as SUDO
+echo -en '\n' #blank line
+echo "Your username : $(echo $USER)" #tells you your username
+echo -en '\n' #blank line
+$(echo "finger $USER") #runs finger on $USER Verbose
+echo -en '\n' #blank line
+echo "Your ID : $(id $user)" #tells you your groups and GIDs
+echo -en '\n' #blank line
+
+INSTALLATION OF SH-BANG CODE HOWTO 
+
+1.  Log into to your Ubuntu OS and Goto the Search tab on the left collumn control bar.
+
+2.  Inside the search string box, type in the word term, up comes the terminal.  Click on terminal.
+
+3.  Inside terminal type w, return, type pwd, return, type status, return, type time, return.
+          (Make sure you have adaquate space for devices like you smart phone or tablets also netbook computers)
+
+4.  Inside terminal type sudo apt install finger, return. 
+
+5.  Inside terminal type confirm installation, type Y for yes to continue.
+
+6.  Inside terminal type finger, return 
+
+7.  Inside terminal type top, return.
+
+8.  Inside terminal type status, return.
+          (realize your left over space on memory use for future data processing, make your plan or do a screen shot for reporting use)
+        
+9.  Inside terminal type vim MyFinger, return.
+
+10.  Inside terminal type all the code with spaces in correct position from :
+
+#!/bin/bash
+
+sudo apt install finger 
+echo -en '\n' #blank line
+echo "Your username : $(echo $USER)" 
+$(echo "finger $USER") 
+echo -en '\n' #blank line
+echo "Your ID : $(id $user)" 
+echo -en '\n' #blank line
+
+
+
+11.  Inside vim still press Esc button type i, type :wq return
+12.  Inside terminal type chmod +x MyFinger , return.
+13.  Inside terminal type MyFinger, Return.
+
+Done
 
